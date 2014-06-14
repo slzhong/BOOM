@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #000;
+  background: #fff;
+}
+
+.input{
+  width: 70%;
+  height: 1.5em;
+  padding: 0.5em;
+  display: block;
+  margin: 0.5em auto;
+  font-size: 1.5em;
+  border: 0.2em solid #000;
+  border-radius: 0.5em;
+}
+
+.button{
+  width: 20%;
+  height: 2em;
+  margin: 0.5em;
+  border: 0.2em solid #000;
+  border-radius: 0.5em;
+  font-size: 1.5em;
+}
+
+.select{
+  width: 30%;
+  height: 2em;
+  margin: 0.5em;
+  border: 0.2em solid #000;
+  border-radius: 0.5em;
+  font-size: 1.5em;
+}
+
+#start-screen,
+#new-form,
+#join-form,
+#choose-side,
+#game{
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+
+#new-form,
+#join-form{
+  width: 100%;
+  height: 50%;
+}
+
+#start-screen{
+  display: block;
+}
+
+.logo{
+  width: 50%;
+  display: block;
+  margin: 2em auto;
+}
+
+.title{
+  font-size: 2em;
+  line-height: 3em;
+}
+
+.button-red,
+.button-blue{
+  width: 70%;
+  height: 3em;
+  margin: 2em auto;
+  border: none;
+  color: #fff;
+}
+.button-red{
+  background: #f00;
+}
+.button-blue{
+  background: #00f;
+}
+
+#avatar{
+  width: 40%;
+  display: block;
+  margin: 1em auto;
+}
+
+.status{
+  font-size: 1.8em;
+  line-height: 2em;
+}
+
+.status-red{
+  margin-right: 2em;
+  color: #f00;
+}
+.status-red span{
+  color: #f00;
+}
+.status-blue,
+.status-blue span{
+  color: #00f;
+}
+
+#round-one,
+#round-two,
+#round-three{
+  padding: 0 0.4em;
+  display: inline-block;
+  margin: 1em 2em 1em 0;
+  border: 0.2em solid #000;
+  border-radius: 0.3em;
+}
+#round-three{
+  margin-right: 0;
+}

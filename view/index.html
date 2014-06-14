@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boom!</title>
+  <link rel="stylesheet" href="../asset/css/style.css">
+</head>
+<body>
+  
+  <div id="start-screen" >
+    <img src="../asset/img/boom.jpg" class="logo">
+    <input type="text" id="name" class="input" placeholder="请输入你的名字~">
+    <button id="new" class="button">创建</button>
+    <button id="join" class="button">加入</button>
+  </div>
+
+  <div id="new-form">
+    <input type="text" id="new-id" class="input" placeholder="请输入房间名字~">
+    <p>
+      <label for="new-number" class="label">房间人数：</label>
+      <select name="" id="new-number" class="select">
+        <option value="2">2</option>
+        <option value="4">4</option>
+        <option value="6">6</option>
+        <option value="8">8</option>
+      </select>
+    </p>
+    <p>
+      <button id="new-submit" class="button">确定</button>
+      <button id="new-back" class="button">返回</button>
+    </p>
+  </div>
+
+  <div id="join-form">
+    <input type="text" id="join-id" class="input"  placeholder="请输入房间名字~">
+    <button id="join-submit" class="button">确定</button>
+    <button id="join-back" class="button">返回</button>
+  </div>
+
+  <div id="choose-side">
+    <h3 class="title">请选队</h3>
+    <button id="red" class="button button-red">RED</button>
+    <button id="blue" class="button button-blue">BLUE</button>
+  </div>
+
+  <div id="game">
+    <img src="" id="avatar">
+    <p>
+      <span class='status status-red'>RED: <span id="red-num">0</span> 人</span>
+      <span class='status status-blue'>BLUE: <span id="blue-num">0</span> 人</span>
+    </p>
+    <p id="result" class="status"></p>
+    <p>
+      <span id="round-one" class="status"> 00 </span>
+      <span id="round-two" class="status"> 00 </span>
+      <span id="round-three" class="status"> 00 </span>
+    </p>
+    <p>
+      <input type="text" id="guess" class="input input-guess" placeholder="在这里输入你猜的数字~">
+      <button id="guess-submit" class="button" disabled="true">ok</button>
+    </p>
+  </div>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../asset/js/client.js"></script>
+
+</body>
+</html>

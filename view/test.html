@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+  }
+  iframe{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    border: 1px solid #000;
+  }
+  #one{
+    top: 0;
+    left: 0;
+  }
+  #two{
+    top: 0;
+    right: 0;
+  }
+  #three{
+    bottom: 0;
+    left: 0;
+  }
+  #four{
+    bottom: 0;
+    right: 0;
+  }
+  </style>
+</head>
+<body>
+  <iframe src="http://0.0.0.0:3000" frameborder="0" id="one"></iframe>
+  <iframe src="http://0.0.0.0:3000" frameborder="0" id="two"></iframe>
+  <iframe src="http://0.0.0.0:3000" frameborder="0" id="three"></iframe>
+  <iframe src="http://0.0.0.0:3000" frameborder="0" id="four"></iframe>
+</body>
+</html>
